@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "sinatra"
 gem "grape"
+gem "grape-entity"
 gem "activerecord", "~> 4.0.0"
 gem "pg"
 gem "rake"
