@@ -8,7 +8,10 @@ gem "pg"
 gem "rake"
 gem "thin"
 
-group :development do
+group :development, :test do
+  gem "rspec"
+  gem "database_cleaner"
+  gem "rack-test", require: "rack/test"
   gem "awesome_print"
   gem "shotgun"
 end
