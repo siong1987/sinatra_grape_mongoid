@@ -1,8 +1,6 @@
-require 'grape'
-require 'grape_entity'
-
 class API < Grape::API
   get :hello do
-    {hello: "world"}
+    event = Event.create
+    {hello: "world", id: event.id, count: Event.count}
   end
 end
